@@ -22,9 +22,10 @@
 */
 
 //CODE HERE
+console.log('----p1----')
+const greetUser = (userName) => `Welcome back, ${userName}!`;
 
-
-
+console.log(greetUser('Robert'))
 
 
 //////////////////PROBLEM 2////////////////////
@@ -51,7 +52,16 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
-
+const canWeDeliver = (zip) => {
+    if (deliveryAreaZipCodes.includes(zip)){
+        return "You're in our delivery zone!"
+    } else{
+        return "Sorry, we can't deliver to that address..."
+    }
+}
+console.log('-----p2----')
+console.log(canWeDeliver(76054))
+console.log(canWeDeliver(85205))
 
 /* 
     Problem 2 Continued
@@ -107,8 +117,9 @@ const deals = [
 */
 
 //CODE HERE
-
-
+console.log('---p3----')
+deals[0].title = deals[0].title.replace(15, 10)
+console.log(deals)
 
 /*
     The restaurant is going to continue its
@@ -124,3 +135,7 @@ const deals = [
 */
 
 //CODE HERE
+
+console.log('---p2.2----')
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
+console.log(deals)
