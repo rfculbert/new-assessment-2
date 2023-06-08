@@ -86,6 +86,11 @@ console.log(calcFinalPrice(25, 5, .06))
 /*
     TEXT ANSWER HERE
 
+    youre going to need first and last name to identify the customer, 
+    the customers contact info (i.e. phone/email) to be able to get into contact with the customer
+    and a customer id number to quickly be able to search and locate the customers information.
+    as well as the customers order or cart.
+
 */
 
 /*
@@ -94,3 +99,12 @@ console.log(calcFinalPrice(25, 5, .06))
 */
 
 //CODE HERE
+
+const customer = {
+    firstName: 'Robert',
+    lastName: 'Culbert',
+    email: 'yourEmail@randomEmail.com',
+    phoneNumber: 888-888-8888,
+    id: 1,
+    order: { ...cart }
+}
